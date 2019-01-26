@@ -2,12 +2,24 @@
 ---Main Page Styles
 ======================= */
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 	font-family: 'Righteous', cursive;
 }
 
 .btn {
 	border: black 2px solid;
+}
+
+/* ====================
+---Main Page Card Styles
+======================= */
+
+.info-tabs {
+	margin: auto;
+}
+
+.event-calendar, .about-fjet {
+	margin-right: 5em;
 }
 
 /* ====================
