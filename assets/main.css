@@ -2,6 +2,17 @@
 ---Main Page Styles
 ======================= */
 
+body {
+	background: rgba(41,184,229,1);
+	background: -moz-linear-gradient(left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41,184,229,1)), color-stop(90%, rgba(188,224,238,1)), color-stop(100%, rgba(188,224,238,1)));
+	background: -webkit-linear-gradient(left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	background: -o-linear-gradient(left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	background: -ms-linear-gradient(left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	background: linear-gradient(to right, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', endColorstr='#bce0ee', GradientType=1 );
+}
+
 h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 	font-family: 'Righteous', cursive;
 }
