@@ -4,12 +4,12 @@
 
 body {
 	background: rgba(41,184,229,1);
-	background: -moz-linear-gradient(left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41,184,229,1)), color-stop(90%, rgba(188,224,238,1)), color-stop(100%, rgba(188,224,238,1)));
-	background: -webkit-linear-gradient(left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
-	background: -o-linear-gradient(left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
-	background: -ms-linear-gradient(left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
-	background: linear-gradient(to right, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	background: -moz-linear-gradient(bottom left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(41,184,229,1)), color-stop(90%, rgba(188,224,238,1)), color-stop(100%, rgba(188,224,238,1)));
+	background: -webkit-linear-gradient(bottom left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	background: -o-linear-gradient(bottom left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	background: -ms-linear-gradient(bottom left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
+	background: linear-gradient(to top right, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', endColorstr='#bce0ee', GradientType=1 );
 }
 
@@ -17,8 +17,28 @@ h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 	font-family: 'Righteous', cursive;
 }
 
+.main-navbar {
+	border: white 2px solid;
+	border-radius: 5%;
+	margin-bottom: 1em;
+}
+
 .btn {
-	border: black 2px solid;
+	border: white 2px solid;
+	border-radius: 15%;
+	background-color: skyblue;
+	color: black;
+}
+
+.btn:hover {
+	background-color: gray;
+	border: white 2px solid;
+}
+
+.jumbotron {
+	background-color: #E4FFE4;
+	border: white 10px solid;
+	border-radius: 5%;
 }
 
 /* ====================
@@ -26,16 +46,30 @@ h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 ======================= */
 
 .info-tabs {
-	margin: auto;
+	margin: 2em auto 2em auto;
 }
 
 .event-calendar, .about-fjet {
 	margin-right: 5em;
 }
 
+.card {
+	border: white 10px solid;
+}
+
+.card-body {
+	background-color: #E4FFE4;
+	color: black;
+}
+
 /* ====================
 ---Footer Styles
 ======================= */
+
+footer {
+	text-align: center;
+}
+
 
 .contact ul {
 	display: inline-flex;
