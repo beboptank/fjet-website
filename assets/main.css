@@ -68,12 +68,14 @@ h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 
 footer {
 	text-align: center;
+	align-content: center;
 }
 
 
 .contact ul {
 	display: inline-flex;
 	list-style: none;
+	margin-right: 1.5em;
 }
 
 .contact ul li {
