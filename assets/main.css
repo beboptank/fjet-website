@@ -41,6 +41,14 @@ h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 	border-radius: 5%;
 }
 
+.jumbotron h1 {
+	margin-left: 5%;
+}
+
+.jumbotron p {
+	margin-left: 5%;
+}
+
 /* ====================
 ---Main Page Card Styles
 ======================= */
@@ -102,4 +110,9 @@ footer {
 
 .contact ul li {
 	margin-right: 1em;
+}
+
+.icon {
+	font-size: 3em;
+	padding: 8px;
 }
