@@ -3,18 +3,11 @@
 ======================= */
 
 body {
-	background: rgba(41,184,229,1);
-	background: -moz-linear-gradient(bottom left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
-	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(41,184,229,1)), color-stop(90%, rgba(188,224,238,1)), color-stop(100%, rgba(188,224,238,1)));
-	background: -webkit-linear-gradient(bottom left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
-	background: -o-linear-gradient(bottom left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
-	background: -ms-linear-gradient(bottom left, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
-	background: linear-gradient(to top right, rgba(41,184,229,1) 0%, rgba(188,224,238,1) 90%, rgba(188,224,238,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29b8e5', endColorstr='#bce0ee', GradientType=1 );
+	background: linear-gradient(180deg, #00b8ff, #ffffff)
 }
 
 h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
-	font-family: 'Righteous', cursive;
+	font-family: 'Gochi Hand', cursive;
 }
 
 .main-navbar {
@@ -43,10 +36,18 @@ h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 
 .jumbotron h1 {
 	margin-left: 5%;
+	font-size: 8em;
+	padding: 0;
 }
 
 .jumbotron p {
 	margin-left: 5%;
+	font-family: 'Righteous', cursive;
+	font-size: 3em;
+}
+
+.f-letter {
+	font-size: 2em;
 }
 
 /* ====================
@@ -68,6 +69,10 @@ h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 .card-body {
 	background-color: #E4FFE4;
 	color: black;
+}
+
+@media screen and (max-width: 900px) {
+	
 }
 
 /* ====================
