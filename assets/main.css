@@ -1,19 +1,25 @@
 /* ====================
 ---Main Page Styles
 ======================= */
+html {
+	height: auto;
+}
 
 body {
-	background: linear-gradient(180deg, #00b8ff, #ffffff)
+	background: linear-gradient(180deg, #00b8ff, #ffffff);
+	height: auto;
 }
 
 h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 	font-family: 'Gochi Hand', cursive;
 }
 
-.main-navbar {
-	border: white 2px solid;
-	border-radius: 5%;
-	margin-bottom: 1em;
+h1 {
+	font-size: 5em;
+}
+
+.about p {
+	font-size: 20px;
 }
 
 .btn {
@@ -28,26 +34,27 @@ h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 	border: white 2px solid;
 }
 
-.jumbotron {
-	background-color: #E4FFE4;
-	border: white 10px solid;
-	border-radius: 5%;
-}
-
-.jumbotron h1 {
-	margin-left: 5%;
-	font-size: 8em;
-	padding: 0;
-}
-
-.jumbotron p {
-	margin-left: 5%;
-	font-family: 'Righteous', cursive;
-	font-size: 3em;
-}
-
 .f-letter {
 	font-size: 2em;
+}
+
+/* ====================
+---Navbar Styles
+======================= */
+
+.main-navbar {
+	border: white 2px solid;
+	border-radius: 5%;
+	margin-bottom: 1em;
+}
+
+.navbar-brand {
+	font-size: 5em;
+}
+
+.nav-item {
+	font-size: 3em;
+	margin-left: 2.5em;
 }
 
 /* ====================
@@ -72,7 +79,10 @@ h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
 }
 
 @media screen and (max-width: 900px) {
-	
+	.info-tabs {
+		width: auto;
+		margin-left: 24%;
+	}
 }
 
 /* ====================
