@@ -24,7 +24,7 @@ h1 {
 
 .btn {
 	border: white 2px solid;
-	border-radius: 15%;
+	border-radius: 4px;
 	background-color: skyblue;
 	color: black;
 }
@@ -43,9 +43,10 @@ h1 {
 ======================= */
 
 .main-navbar {
-	border: white 2px solid;
-	border-radius: 5%;
+	border: white 10px solid;
+	border-radius: 20px;
 	margin-bottom: 1em;
+	background-color: #E4FFE4;
 }
 
 .navbar-brand {
@@ -56,6 +57,11 @@ h1 {
 .nav-item {
 	font-size: 3em;
 	margin-left: 2.5em;
+}
+
+.nav-item:hover, .navbar-brand:hover {
+	transform: scale(1.1);
+	transition: all .5s ease;
 }
 
 /* ====================
