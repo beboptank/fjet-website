@@ -1,9 +1,13 @@
-window.onload("load", function() {
-    
+document.body.classList.add("fade");
+document.addEventListener("DOMContentLoaded", function(e) {
+    document.body.classList.remove("fade");
 });
 
-const navs = document.querySelectorAll('.nav-item');
+document.querySelectorAll('.nav-item').addEventListener("click", pageTransition);
 
-function pageTransition(event) {
-
+function pageTransition(e) {
+    document.body.classList.add("fade");
+    document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.classList.remove("fade");
+    });
 }
