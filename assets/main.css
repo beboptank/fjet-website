@@ -71,6 +71,10 @@ h1 {
 	transition: all .5s ease;
 }
 
+.currentPage {
+	color: #00b8ff;
+}
+
 /* ====================
 ---Main Page Card Styles
 ======================= */
