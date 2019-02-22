@@ -1,0 +1,151 @@
+/* ====================
+---Main Page Styles
+======================= */
+html {
+	height: auto;
+}
+
+body {
+	background: linear-gradient(180deg, #00b8ff, #ffffff);
+	height: auto;
+	opacity: 1;
+	transition: 2.5s opacity;
+}
+
+body.fade {
+	opacity: 0;
+	transition: none;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
+	font-family: 'Gochi Hand', cursive;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+.about p {
+	font-size: 20px;
+}
+
+.btn {
+	border: white 2px solid;
+	border-radius: 4px;
+	background-color: skyblue;
+	color: black;
+}
+
+.btn:hover {
+	background-color: gray;
+	border: white 2px solid;
+}
+
+.f-letter {
+	font-size: 2em;
+}
+
+/* ====================
+---Navbar Styles
+======================= */
+
+.main-navbar {
+	border: white 10px solid;
+	border-radius: 20px;
+	margin-bottom: 1em;
+	background-color: #E4FFE4;
+}
+
+.navbar-brand {
+	font-size: 4em;
+	margin-left: 1em;
+}
+
+.nav-item {
+	font-size: 3em;
+	margin-left: 2.5em;
+}
+
+.nav-item:hover, .navbar-brand:hover {
+	transform: scale(1.1);
+	transition: all .5s ease;
+}
+
+.currentPage {
+	color: #00b8ff;
+}
+
+/* ====================
+---Main Page Card Styles
+======================= */
+
+.info-tabs {
+	align-items: center;
+}
+
+.event-calendar, .about-fjet {
+	margin-right: 8.5em;
+}
+
+.card {
+	border: white 10px solid;
+}
+
+.card-body {
+	background-color: #E4FFE4;
+	color: black;
+}
+
+@media screen and (max-width: 900px) {
+	.info-tabs {
+		width: auto;
+		margin-left: 24%;
+	}
+}
+
+/* ====================
+---Calendar Styles
+======================= */
+
+.responsive-iframe-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+	
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 85%;
+}
+
+/* ====================
+---Footer Styles
+======================= */
+
+footer {
+	text-align: center;
+	align-content: center;
+}
+
+
+.contact ul {
+	display: inline-flex;
+	list-style: none;
+	margin-right: 1.5em;
+}
+
+.contact ul li {
+	margin-right: 1em;
+}
+
+.icon {
+	font-size: 3em;
+	padding: 8px;
+}
