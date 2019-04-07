@@ -1,15 +1,14 @@
 /* ====================
 ---Main Page Styles
 ======================= */
-html {
+html, body {
 	height: auto;
-}
-
-body {
+	width: 100%;
 	background: linear-gradient(180deg, #00b8ff, #ffffff);
-	height: auto;
 	opacity: 1;
 	transition: 2.5s opacity;
+	margin: 0;
+	padding: 0;
 }
 
 body.fade {
@@ -32,7 +31,7 @@ h1 {
 .btn {
 	border: white 2px solid;
 	border-radius: 4px;
-	background-color: skyblue;
+	background-color: #00b8ff;
 	color: black;
 }
 
@@ -52,7 +51,7 @@ h1 {
 .main-navbar {
 	border: white 10px solid;
 	border-radius: 20px;
-	margin-bottom: 1em;
+	padding: .8rem;
 	background-color: #E4FFE4;
 }
 
@@ -63,7 +62,7 @@ h1 {
 
 .nav-item {
 	font-size: 3em;
-	margin-left: 2.5em;
+	padding: .8rem;
 }
 
 .nav-item:hover, .navbar-brand:hover {
@@ -76,6 +75,15 @@ h1 {
 }
 
 /* ====================
+---Image Slider Styles
+======================= */
+
+.carousel-inner img {
+	width: 95%;
+	height: 50rem;
+}
+
+/* ====================
 ---Main Page Card Styles
 ======================= */
 
@@ -83,12 +91,9 @@ h1 {
 	align-items: center;
 }
 
-.event-calendar, .about-fjet {
-	margin-right: 8.5em;
-}
-
 .card {
 	border: white 10px solid;
+	margin: 2em;
 }
 
 .card-body {
@@ -96,10 +101,16 @@ h1 {
 	color: black;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
 	.info-tabs {
 		width: auto;
 		margin-left: 24%;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.card {
+		width: 100%;
 	}
 }
 
@@ -147,5 +158,20 @@ footer {
 
 .icon {
 	font-size: 3em;
-	padding: 8px;
+}
+
+/* ====================
+---Media Queries
+======================= */
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
 }
