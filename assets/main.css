@@ -137,6 +137,30 @@ h1 {
 }
 
 /* ====================
+---Contact Form
+======================= */
+
+#emailBody {
+	width: 20rem;
+}
+
+#emailSubmit {
+	font-size: 2em;
+	font-family: 'Gochi Hand', cursive;
+	margin: 10px 10px 20px 0;
+	background-color: #00b8ff;
+	border: white 2px solid;
+	border-radius: 4px;
+}
+
+#emailSubmit:hover {
+	transform: scale(1.1);
+	transition: all .5s ease;
+	background-color: gray;
+	border: white 2px solid;
+}
+
+/* ====================
 ---Footer Styles
 ======================= */
 
