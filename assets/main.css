@@ -61,7 +61,7 @@ h1 {
 }
 
 .nav-item {
-	font-size: 3em;
+	font-size: 2em;
 	padding: .8rem;
 }
 
@@ -173,11 +173,14 @@ footer {
 .contact ul {
 	display: inline-flex;
 	list-style: none;
-	margin-right: 1.5em;
 }
 
 .contact ul li {
 	margin-right: 1em;
+}
+
+.contact ul li:last-child {
+	margin-right: 3em;
 }
 
 .icon {

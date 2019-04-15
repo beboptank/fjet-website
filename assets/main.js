@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
     document.body.classList.remove("fade");
 });
 
-document.querySelectorAll('.nav-item').addEventListener("click", pageTransition);
+let navItemSelection = document.querySelectorAll('.nav-item');
+
+navItemSelection.addEventListener('click', pageTransition);
 
 function pageTransition(e) {
     document.body.classList.add("fade");
