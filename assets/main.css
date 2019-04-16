@@ -61,7 +61,7 @@ h1 {
 }
 
 .nav-item {
-	font-size: 3em;
+	font-size: 2em;
 	padding: .8rem;
 }
 
@@ -137,6 +137,30 @@ h1 {
 }
 
 /* ====================
+---Contact Form
+======================= */
+
+#emailBody {
+	width: 20rem;
+}
+
+#emailSubmit {
+	font-size: 2em;
+	font-family: 'Gochi Hand', cursive;
+	margin: 10px 10px 20px 0;
+	background-color: #00b8ff;
+	border: white 2px solid;
+	border-radius: 4px;
+}
+
+#emailSubmit:hover {
+	transform: scale(1.1);
+	transition: all .5s ease;
+	background-color: gray;
+	border: white 2px solid;
+}
+
+/* ====================
 ---Footer Styles
 ======================= */
 
@@ -149,11 +173,14 @@ footer {
 .contact ul {
 	display: inline-flex;
 	list-style: none;
-	margin-right: 1.5em;
 }
 
 .contact ul li {
 	margin-right: 1em;
+}
+
+.contact ul li:last-child {
+	margin-right: 3em;
 }
 
 .icon {
