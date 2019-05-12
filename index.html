@@ -8,9 +8,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/@barba/core"></script>
     </head> 
 
-    <body>
+    <body data-barba="wrapper">
         <header>
             <section>
                 <nav class="navbar navbar-expand-md navbar-light bg-secondary main-navbar sticky-top">
@@ -47,61 +49,61 @@
 		<br>
 
 		<!--Welcome section-->
-		<div data-barba="barba-wrapper">
-			<div data-barba="barba-container">
-				<div class="container-fluid padding">
-					<div class="row welcome text-center">
-						<div class="col-12">
-							<h1 class="display-4">
-								Providing ALTs in Fukui with advice for living in Japan.
-							</h1>
-						</div>
-						<hr class="my-4">
-						<div class="col-12">
-							<p class="lead">
-								Updated regularly with the latest information about events in Fukui
-								and the surrounding prefectures.
-							</p>
-						</div>
+		
+		<div data-barba="barba-container" data-barba-namespace="home">
+			<div class="container-fluid padding">
+				<div class="row welcome text-center">
+					<div class="col-12">
+						<h1 class="display-4">
+							Providing ALTs in Fukui with advice for living in Japan.
+						</h1>
 					</div>
-				</div>
-
-				<div class="container-fluid padding">
-					<div class="row text-center padding">
-							<div class="text-center text-white event-calendar col-xs-12 col-sm-6 col-md-4">
-								<div class="card">
-									<img src="assets/images/rawpixel-633847-unsplash.jpg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title">Event Calendar</h5>
-										<p class="card-text">Find out about the latest events happening in Fukui.</p>
-										<a href="#" class="btn btn-primary">See Upcoming Events</a>
-									</div>
-								</div>
-							</div>
-							<div class="text-center text-white about-fjet col-xs-12 col-sm-6 col-md-4">
-								<div class="card">
-									<img src="assets/images/zachary-nelson-192289-unsplash.jpg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title">About FJET</h5>
-										<p class="card-text">Learn more about the JET Program(me) and FJET.</p>
-										<a href="#" class="btn btn-primary">Learn More</a>
-									</div>
-								</div>
-							</div>
-							<div class="text-center text-white about-fukui col-sm-12 col-md-4">
-								<div class="card">
-									<img src="assets/images/fjet.jpg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title">About Fukui</h5>
-										<p class="card-text">Learn more about Fukui, the happiest prefecture in Japan!</p>
-										<a href="#" class="btn btn-primary">Learn More</a>
-									</div>
-								</div>
-							</div>
+					<hr class="my-4">
+					<div class="col-12">
+						<p class="lead">
+							Updated regularly with the latest information about events in Fukui
+							and the surrounding prefectures.
+						</p>
 					</div>
 				</div>
 			</div>
+
+			<div class="container-fluid padding">
+				<div class="row text-center padding">
+						<div class="text-center text-white event-calendar col-xs-12 col-sm-6 col-md-4">
+							<div class="card">
+								<img src="assets/images/rawpixel-633847-unsplash.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Event Calendar</h5>
+									<p class="card-text">Find out about the latest events happening in Fukui.</p>
+									<a href="#" class="btn btn-primary">See Upcoming Events</a>
+								</div>
+							</div>
+						</div>
+						<div class="text-center text-white about-fjet col-xs-12 col-sm-6 col-md-4">
+							<div class="card">
+								<img src="assets/images/zachary-nelson-192289-unsplash.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">About FJET</h5>
+									<p class="card-text">Learn more about the JET Program(me) and FJET.</p>
+									<a href="#" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+						</div>
+						<div class="text-center text-white about-fukui col-sm-12 col-md-4">
+							<div class="card">
+								<img src="assets/images/fjet.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">About Fukui</h5>
+									<p class="card-text">Learn more about Fukui, the happiest prefecture in Japan!</p>
+									<a href="#" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
 		</div>
+		
 
         <footer class="contact container-fluid">
             <nav class="footer-nav">
@@ -116,8 +118,7 @@
 			<p>&#169;2019 Seth Christmus. All Rights Reserved.</p>
         </footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/@barba/core"></script>
+		
 		<script type="module" src="assets/main.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
