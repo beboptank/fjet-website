@@ -1,15 +1,16 @@
-document.body.classList.add("fade");
-document.addEventListener("DOMContentLoaded", function(e) {
-    document.body.classList.remove("fade");
+$('document').ready(function() {
+  barba.init({
+    transitions: [
+      {
+        leave({ current, next, trigger }) {
+          // Do something with `current.container` for your leave transition
+          // then return a promise or use `this.async()`
+        },
+        enter({ current, next, trigger }) {
+          // Do something with `next.container` for your enter transition
+          // then return a promise or use `this.async()`
+        },
+      },
+    ],
+  });
 });
-
-let navItemSelection = document.querySelectorAll('.nav-item');
-
-navItemSelection.addEventListener('click', pageTransition);
-
-function pageTransition(e) {
-    document.body.classList.add("fade");
-    document.addEventListener("DOMContentLoaded", function(e) {
-        document.body.classList.remove("fade");
-    });
-}
