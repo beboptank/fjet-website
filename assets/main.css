@@ -57,7 +57,7 @@ h1 {
 
 .navbar-brand {
 	font-size: 4em;
-	margin-left: 1em;
+	margin-left: 0.5em;
 }
 
 .nav-item {
@@ -72,15 +72,6 @@ h1 {
 
 .currentPage {
 	color: #00b8ff;
-}
-
-/* ====================
----Image Slider Styles
-======================= */
-
-.carousel-inner img {
-	width: 95%;
-	height: 50rem;
 }
 
 /* ====================
@@ -141,7 +132,7 @@ h1 {
 ======================= */
 
 #emailBody {
-	width: 20rem;
+	width: 100%;
 }
 
 #emailSubmit {
@@ -192,13 +183,28 @@ footer {
 ======================= */
 
 @media (max-width: 992px) {
-
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	.nav-item {
+		font-size: 1.5em;
+	}
 }
 
 @media (max-width: 768px) {
-
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+	.nav-item {
+		font-size: 1em;
+	}
 }
 
 @media (max-width: 576px) {
-
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
 }
