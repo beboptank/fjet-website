@@ -16,7 +16,11 @@ body.fade {
 	transition: none;
 }
 
-h1, h2, h3, h4, h5, .navbar-brand, .nav-link {
+h1, h2, h3, h4, h5, .navbar-brand, .nav-link, .btn {
+	font-family: 'Gochi Hand', cursive;
+}
+
+.main-font {
 	font-family: 'Gochi Hand', cursive;
 }
 
@@ -44,6 +48,8 @@ h1 {
 	font-size: 2em;
 }
 
+
+
 /* ====================
 ---Navbar Styles
 ======================= */
@@ -57,7 +63,7 @@ h1 {
 
 .navbar-brand {
 	font-size: 4em;
-	margin-left: 0.5em;
+	margin-left: 1em;
 }
 
 .nav-item {
@@ -72,6 +78,15 @@ h1 {
 
 .currentPage {
 	color: #00b8ff;
+}
+
+/* ====================
+---Image Slider Styles
+======================= */
+
+.carousel-inner img {
+	width: 95%;
+	height: 50rem;
 }
 
 /* ====================
@@ -132,7 +147,7 @@ h1 {
 ======================= */
 
 #emailBody {
-	width: 100%;
+	width: 20rem;
 }
 
 #emailSubmit {
@@ -183,28 +198,19 @@ footer {
 ======================= */
 
 @media (max-width: 992px) {
-	html, body {
-		margin: 0;
-		padding: 0;
-	}
-	.nav-item {
+	.icon {
+		font-size: 2em;
+	}	
+}
+
+@media (max-width: 768px) {
+	.icon {
 		font-size: 1.5em;
 	}
 }
 
-@media (max-width: 768px) {
-	html, body {
-		margin: 0;
-		padding: 0;
-	}
-	.nav-item {
-		font-size: 1em;
-	}
-}
-
 @media (max-width: 576px) {
-	html, body {
-		margin: 0;
-		padding: 0;
+	.icon {
+		font-size: 1em;
 	}
 }
