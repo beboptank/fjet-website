@@ -201,16 +201,25 @@ footer {
 	.icon {
 		font-size: 2em;
 	}	
+	.jumbo-font {
+		font-size: 5em;
+	}
 }
 
 @media (max-width: 768px) {
 	.icon {
 		font-size: 1.5em;
 	}
+	.jumbo-font {
+		font-size: 4.6em;
+	}
 }
 
 @media (max-width: 576px) {
 	.icon {
 		font-size: 1em;
+	}
+	.jumbo-font {
+		font-size: 4.4em;
 	}
 }
